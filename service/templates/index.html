@@ -16,7 +16,7 @@
                     <h1 class="text-success mb-3 text-start h2">Fatching Data From Admin Panel</h1>
                     <div class="card mb-5">
                         <div class="card-body table-responsive">
-                            <table class="table table-border-less table-responsive-sm table-text-start table-sm table-hover">
+                            <table class="table table-border-less table-responsive-sm table-text-start table-md table-hover">
                                 <thead>
                                     <tr class="table-primary">
                                         <th>User Name</th>
@@ -27,7 +27,7 @@
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
-                                {% for i in context %}
+                                {% for i in context reversed %}
                                 <tbody>
                                     <tr>
                                         <td>{{i.userName}}</td>
